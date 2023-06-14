@@ -70,3 +70,18 @@ $ git commit -m "这里写一些描述这个commit的文字，随便填"
 phil@LAPTOP-IG5DOVO3 MINGW64 ~/TKF (main)
 $ git push
 ```
+
+## 2. 在 IntelliJ Idea 中开发和运行代码
+
+### 2.1 下载并安装IntelliJ Idea
+下载地址：[https://www.jetbrains.com/idea/download/#section=windows](https://www.jetbrains.com/idea/download/#section=windows)
+选择Community Edition的免费版本，双击安装，你懂的。
+
+### 2.2 下载JDK(Java Development Toolkit)
+下载地址：[https://www.oracle.com/in/java/technologies/downloads/#jdk20-windows](https://www.oracle.com/in/java/technologies/downloads/#jdk20-windows)
+选择下载x64 MSI Installer，双击安装，你懂的。
+
+### 2.3 在 IntelliJ Idea 中运行游戏
+* 打开Idea，在欢迎界面中选择“Open”，找到TKF文件夹，点”OK“创建项目
+* 为项目设置JDK：“File” -> "Project Structure" -> "Project Settings" -> "Project" -> "SDK"，在下拉列表中选择安装好的JDK
+* 打开Main.java文件，点击```public static void main(String[] args) {```左边的绿色三角按钮。
