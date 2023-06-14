@@ -26,20 +26,20 @@ public class MainFrame extends JFrame {
     public void init() {
         // 设置窗口大小，标题等
         this.setSize(800, 600);
-        this.setTitle("三国杀");
+        this.setTitle("Three Kingdoms Fight");
 
         // 添加菜单栏
         this.menuBar = new JMenuBar();
-        this.gameMenu = new JMenu("游戏");
+        this.gameMenu = new JMenu("Game");
         this.menuBar.add(this.gameMenu);
-        this.newGameMenuItem = new JMenuItem("新游戏");
+        this.newGameMenuItem = new JMenuItem("New Game");
         this.gameMenu.add(this.newGameMenuItem);
         this.setJMenuBar(this.menuBar);
 
         // 添加角色信息和卡牌展示
-        this.hpLabel = new JLabel("血量：10/10");
-        this.handCardsLabel = new JLabel("手牌：");
-        this.equipCardsLabel = new JLabel("装备区：");
+        this.hpLabel = new JLabel("HP: 10/10");
+        this.handCardsLabel = new JLabel("Hand Cards: ");
+        this.equipCardsLabel = new JLabel("Equipment Area: ");
         this.handCardsPanel = new JPanel();
         this.equipCardsPanel = new JPanel();
         this.add(this.hpLabel, BorderLayout.NORTH);
@@ -49,9 +49,9 @@ public class MainFrame extends JFrame {
         this.add(this.equipCardsPanel, BorderLayout.SOUTH);
 
         // 添加操作按钮
-        this.attackButton = new JButton("攻击");
-        this.useCardButton = new JButton("出牌");
-        this.endTurnButton = new JButton("结束回合");
+        this.attackButton = new JButton("Attack");
+        this.useCardButton = new JButton("Use Cards");
+        this.endTurnButton = new JButton("End Turn");
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(this.attackButton);
         buttonPanel.add(this.useCardButton);
